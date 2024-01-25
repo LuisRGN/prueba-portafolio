@@ -1,11 +1,11 @@
 body {
     text-align: center;
     font-size: large;
-    margin: 10px 100px 10px 100px;
+    width: 100%;
     background-color: #000000d9;
 }
 header {
-    margin: 20px;
+    margin: 20px 90px 20px 90px;
     text-align: center;
     background-color: darkmagenta;
     border-radius: 10px;
@@ -15,25 +15,36 @@ nav {
   padding: 20px;
   background-color: darkgray; 
   border-radius: 10px; 
-  margin: 20px;
+  margin: 20px 90px 20px 90px;
+  display: flex;
+  flex-direction: column;
 }
 ul {
-    display: flex;
-    justify-content: space-evenly;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 img {
     max-width: 200px;
     max-height: 200px;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.2);
 }
 section {
     background-color: darkmagenta;
-    margin: 20px;
+    margin: 20px 90px 20px 90px;
     padding: 50px;
     border-radius: 10px;
 }
 h1, h2, p, li, footer, a{
     color: white;
+}
+li {
+    display: flex;
+    flex-direction: column;
 }
 a {
     text-decoration: none;
@@ -43,10 +54,9 @@ a:hover {
 }
 footer {
     background-color: dimgray;
-    margin: 20px;
+    margin: 20px 90px 20px 90px;
     border-radius: 10px;
     padding: 10px;
-    
 }
 section:hover {
     background-color: darkorchid;
